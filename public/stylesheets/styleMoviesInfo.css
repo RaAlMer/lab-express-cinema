@@ -1,0 +1,29 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.movie {
+    width: 500px;
+}
+
+.stars {
+    margin-left: -26px;
+}
+
+.showtimes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: -40px;
+}

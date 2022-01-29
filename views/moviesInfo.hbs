@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/stylesheets/styleMoviesInfo.css" />
+<div class="content">
+    <img src={{moviesFromDB.image}}>
+    <div class="movie">
+        <a href="/movies">Go back</a>
+        <h2>{{moviesFromDB.title}}</h2>
+        <h3>Director: {{moviesFromDB.director}}</h3>
+        <ul class="stars">
+            {{#each moviesFromDB.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{moviesFromDB.description}}</p>
+        <ul class="showtimes">
+            {{#each moviesFromDB.showtimes}}
+                <li> {{this}} | </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
